@@ -1,0 +1,52 @@
+.driver-ride-requests {
+  padding: 20px;
+}
+
+.ride-requests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.ride-request-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ride-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ride-status {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.ride-actions {
+  margin-top: 10px;
+}
+
+.accept-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.reject-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}

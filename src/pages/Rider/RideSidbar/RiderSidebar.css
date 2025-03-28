@@ -1,0 +1,32 @@
+/* RiderSidebar.css */
+.rider-sidebar {
+  width: 250px;
+  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.rider-sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rider-sidebar ul {
+  list-style: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.79);
+}
+
+.rider-sidebar li {
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.rider-sidebar li:hover,
+.rider-sidebar .active {
+  background-color: #007bff;
+}

@@ -1,0 +1,70 @@
+.history-rides-container {
+  padding: 20px;
+}
+
+.ride-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.ride-history-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ride-history-card:hover {
+  transform: translateY(-5px);
+}
+
+.ride-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.status-completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-cancelled {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-ongoing {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.status-unknown {
+  background: #e2e3e5;
+  color: #6c757d;
+}
+
+.ride-history-card p {
+  margin: 5px 0;
+}
+
+.no-rides {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  padding: 20px;
+}

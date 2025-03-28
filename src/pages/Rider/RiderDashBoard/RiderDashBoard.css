@@ -1,0 +1,30 @@
+/* Modal Options */
+.modal-options {
+  position: absolute;
+  top: 100%; /* Places it just below the navbar */
+  right: 20px; /* Aligns it with the button's position */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px; /* Fully rounded corners for the dropdown */
+  padding: 10px 0; /* Adds spacing inside the dropdown */
+  width: 200px; /* Fixed width for the dropdown */
+  z-index: 1001;
+}
+
+.modal-options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-options li {
+  padding: 15px 20px;
+  font-size: 16px;
+  text-align: center; /* Center-aligns the text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-options li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}

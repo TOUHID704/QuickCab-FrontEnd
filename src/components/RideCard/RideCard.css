@@ -1,0 +1,122 @@
+.ride-card-container {
+  background-color: #fff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px; /* Medium width */
+  padding: 20px; /* Increased padding for more space */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+  margin: 15px; /* Space around the card */
+  font-family: Arial, sans-serif;
+  color: #333; /* Dark text color for readability */
+}
+
+.ride-card-container h3 {
+  font-size: 1.3rem; /* Increased font size for title */
+  color: #111; /* Darker text color for title */
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ride-card-container h3 span {
+  font-size: 1.1rem;
+  color: #555; /* Dark grey for highlighted part */
+}
+
+.ride-card-container .ride-details {
+  font-size: 1rem; /* Slightly larger font size */
+  color: #444; /* Dark grey text color */
+  margin-bottom: 15px;
+}
+
+.ride-card-container .ride-details div {
+  margin-bottom: 10px;
+}
+
+.ride-card-container .ride-details .location,
+.ride-card-container .ride-details .fare {
+  font-weight: bold;
+  color: #111; /* Dark grey for emphasis */
+}
+
+.ride-card-container .ride-footer {
+  font-size: 0.9rem; /* Slightly larger footer font size */
+  color: #777; /* Light grey for footer */
+  margin-top: 15px;
+  border-top: 1px solid #e0e0e0; /* Light grey border */
+  padding-top: 10px;
+}
+
+.ride-card-container .ride-footer span {
+  font-weight: bold;
+}
+
+/* Icons for better readability */
+.ride-card-container .ride-details .location:before {
+  content: "📍";
+  margin-right: 8px;
+}
+
+.ride-card-container .ride-details .fare:before {
+  content: "💰";
+  margin-right: 8px;
+}
+
+.ride-card-container .ride-details .status:before {
+  content: "🛣️";
+  margin-right: 8px;
+}
+
+.ride-card-container .ride-footer .payment-method:before {
+  content: "💳";
+  margin-right: 8px;
+}
+
+.ride-card-container .ride-footer .otp:before {
+  content: "🔢";
+  margin-right: 8px;
+  font-weight: bold;
+  color: #d9534f; /* Red for emphasis */
+}
+
+.ride-card-container .driver-details {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.ride-card-container .driver-details h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.ride-card-container .driver-details div {
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.ride-card-container .driver-details div:before {
+  content: "👤";
+  margin-right: 6px;
+}
+
+.ride-card-container .timestamps {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.ride-card-container .timestamps div {
+  margin-bottom: 5px;
+}
+
+.ride-card-container .timestamps div:before {
+  content: "⏳";
+  margin-right: 6px;
+}

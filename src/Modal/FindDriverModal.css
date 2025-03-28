@@ -1,0 +1,58 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.find-driver-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.driver-emoji {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background-color: green;
+  transition: width 1s linear;
+}
+/* Hide Leaflet controls when modal is active */
+.modal-overlay + .leaflet-control-container {
+  display: none;
+}

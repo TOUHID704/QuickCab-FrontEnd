@@ -1,0 +1,77 @@
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-modal,
+.success-modal {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-modal h2,
+.success-modal h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-field,
+.login-btn,
+.cancel-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(200, 200, 200);
+  transition: border-color 0.3s;
+}
+
+.input-field:focus {
+  border-color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.login-btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.cancel-btn {
+  background-color: rgb(243, 243, 243);
+  color: rgb(0, 0, 0);
+}
+
+/* Success Modal Styles */
+.success-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkmark {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 15px;
+}
+
+p {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 16px;
+}

@@ -1,0 +1,44 @@
+/* NavBar.css */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+.auth-buttons button {
+  padding: 12px 25px;
+  margin: 5px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn-header,
+.signup-btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}

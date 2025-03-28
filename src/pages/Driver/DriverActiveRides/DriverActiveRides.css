@@ -1,0 +1,50 @@
+.active-ride-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.ride-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+.otp-section {
+  margin-top: 15px;
+}
+
+.otp-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.start-btn,
+.end-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.start-btn {
+  background-color: #28a745;
+}
+
+.end-btn {
+  background-color: #dc3545;
+}
+
+.start-btn:hover {
+  background-color: #218838;
+}
+
+.end-btn:hover {
+  background-color: #c82333;
+}

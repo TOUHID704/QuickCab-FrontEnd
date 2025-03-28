@@ -1,0 +1,118 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.select-vehicle-modal {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-emoji {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.vehicle-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.vehicle-option {
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 30%;
+}
+
+.vehicle-option:hover,
+.vehicle-option.selected {
+  border-color: green;
+  background-color: #e0ffe0;
+}
+
+.vehicle-icon {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.proceed-button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.proceed-button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.proceed-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Hide Leaflet controls when modal is open */
+.modal-overlay + .leaflet-control-container {
+  display: none;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cancel-button:hover {
+  background-color: #a71d2a;
+}
+
+.fare-info {
+  font-size: 0.8rem; /* Smaller text */
+  color: #555;
+  margin-top: 5px;
+  word-wrap: break-word; /* Ensures text wraps properly */
+  overflow: hidden; /* Prevents text from going outside */
+  text-align: center;
+}
+
+.fare-price {
+  font-weight: bold;
+  display: block; /* Forces price to stay inside */
+  word-wrap: break-word;
+  max-width: 100%; /* Ensures it doesn’t overflow */
+}

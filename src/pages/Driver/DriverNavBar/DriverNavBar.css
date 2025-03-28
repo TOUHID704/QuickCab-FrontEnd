@@ -1,0 +1,17 @@
+.nav-bar {
+  height: 60px;
+  background-color: #007bff;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+.nav-bar-logo {
+  font-weight: bold;
+}
+
+.nav-bar-user {
+  margin-left: auto;
+}

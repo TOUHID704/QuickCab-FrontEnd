@@ -1,0 +1,62 @@
+/* ActiveRides.css */
+.active-rides {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ride-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 6px solid #007bff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ride-card:hover {
+  transform: scale(1.02);
+}
+
+.ride-card .status {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.ride-card .otp {
+  font-weight: bold;
+  color: #d9534f;
+}
+
+.ride-card .driver-info {
+  margin-top: 10px;
+  padding: 10px;
+  background: #e9ecef;
+  border-radius: 5px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+/* Different status colors */
+.ride-card.confirmed {
+  border-left-color: #28a745;
+} /* ✅ Green */
+.ride-card.ongoing {
+  border-left-color: #ffc107;
+} /* 🚦 Yellow */
+.ride-card.accepted {
+  border-left-color: #17a2b8;
+} /* 🛠 Blue */
+.ride-card.cancelled {
+  border-left-color: #dc3545;
+} /* ❌ Red */
+.ride-card.ended {
+  border-left-color: #6c757d;
+} /* 🏁 Grey */

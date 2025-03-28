@@ -1,0 +1,52 @@
+/* Container for the entire profile */
+.profile-container {
+  background-color: #fff;
+  color: #333;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Title of the profile */
+.profile-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111; /* Dark color for title */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile details section */
+.profile-details {
+  color: #555; /* Grey color for text */
+  line-height: 1.6;
+}
+
+/* Highlight the profile fields */
+.profile-details strong {
+  color: #111; /* Dark color for the labels */
+}
+
+/* Loading state style */
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777; /* Light grey */
+}
+
+/* Error message style */
+.error {
+  text-align: center;
+  font-size: 1.2rem;
+  color: red;
+}
+
+/* Optional: Hover effect for the profile text */
+.profile-details p:hover {
+  color: #007bff;
+  cursor: pointer;
+}

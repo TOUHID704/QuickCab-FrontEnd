@@ -1,0 +1,194 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(243, 243, 243);
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(243, 243, 243);
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Authentication Buttons */
+.auth-buttons button {
+  padding: 12px 25px;
+  margin: 5px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn-header,
+.signup-btn {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+/* Hero Section */
+.hero-section {
+  margin-top: 80px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+.cta-btn.secondary {
+  background-color: transparent;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+}
+
+.cta-btn.secondary:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+.features-section {
+  padding: 60px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  transition: transform 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+  }
+
+  .feature-item {
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

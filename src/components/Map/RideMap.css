@@ -1,0 +1,19 @@
+/* Ensure the map container takes full width and height */
+.ride-map-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+/* Hide all Leaflet map controls when the modal is active */
+.modal-open .leaflet-control-container,
+.modal-open .leaflet-top,
+.modal-open .leaflet-bottom {
+  display: none !important;
+}
+
+/* Ensure the map itself is properly displayed */
+.ride-map {
+  width: 100%;
+  height: 100%;
+}
